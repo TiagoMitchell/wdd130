@@ -90,11 +90,3 @@ header nav {
     align-items: center;
     gap: 20px;
 }
-
-header {
-    background-color: var(--cor-secundaria);
-}
-
-section h2 {
-    border-bottom: 2px solid var(--cor-destaque);
-}
