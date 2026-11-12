@@ -40,7 +40,7 @@ article {
     padding: 8px;
 }
 
-.redes-sociais a {
+footer a {
     text-decoration: none;
 }
 
@@ -89,4 +89,12 @@ header nav {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+}
+
+header {
+    background-color: var(--cor-secundaria);
+}
+
+section h2 {
+    border-bottom: 2px solid var(--cor-destaque);
 }
