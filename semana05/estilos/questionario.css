@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin: 0 auto;
+}
+
+header,
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: navy;
+}
+
+main {
+    background-color: #999;
+    padding: 10px 30px 30px 30px;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 1rem;
+    display: block;
+    margin-top: 10px;
+}
+
+form {
+    display: grid;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 15px;
+    background-color: #eeeeeead;
+}
+
+label,
+input,
+button,
+textarea,
+select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 0.3rem;
+}
+
+button {
+    margin-top: 10px;
+    background-color: navy;
+    color: #fff;
+    border-radius: 5rem;
+    appearance: none;
+    border: 1px solid #999;
+    padding: .40rem;
+    width: 100px;
+    height: 40px;
+    margin: 5px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+code {
+    color: #eee;
+    background-color: #333;
+    padding: 1px;
+}
+
+select {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#q4 {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#q1 {
+    margin-top: 10px;
+    padding: 5px;
+}
