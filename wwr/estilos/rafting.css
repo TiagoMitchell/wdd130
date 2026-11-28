@@ -140,22 +140,33 @@ section h2 {
     gap: 0.75rem;
 }
 
-.galeria figure {
+/* Figuras: galeria e equipe */
+.galeria figure,
+.equipe figure {
     text-align: center;
 }
 
-.galeria img {
+.galeria img,
+.equipe img {
     display: block;
     width: 100%;
-    height: 120px;
     object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.galeria img {
+    height: 120px;
+}
+
+.galeria figcaption,
+.equipe figcaption {
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color: var(--cor-texto);
 }
 
 .galeria figcaption {
-    padding: 0.5rem 0;
     font-size: 0.85rem;
-    font-weight: bold;
-    color: var(--cor-texto);
 }
 
 footer {
@@ -185,6 +196,119 @@ footer .redes-sociais {
     height: 30px;
 }
 
+/* ===== Página Fale Conosco ===== */
+
+.contato-info {
+    margin: 0.5rem 0 1.5rem;
+    text-align: center;
+}
+
+/* Mapa à esquerda, formulário à direita */
+.contato-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+/* Nome e e-mail */
+.form-item {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Mensagem */
+.form-item2 {
+    display: grid;
+    gap: 0.25rem;
+}
+
+/* Newsletter */
+.form-item1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Campos de texto compartilham o mesmo estilo */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 4px;
+    font: inherit;
+    color: var(--cor-texto);
+}
+
+/* Botões de opção */
+fieldset {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0;
+}
+
+legend {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--cor-primaria);
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+}
+
+/* Equipe: caixa com título */
+.equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border: 1px solid var(--cor-primaria);
+}
+
+.equipe h2 {
+    grid-column: 1 / -1;
+}
+
+.equipe img {
+    max-width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+/* ===== Responsivo ===== */
+
 @media screen and (max-width: 650px) {
     header {
         grid-template-columns: 1fr;
@@ -202,6 +326,12 @@ footer .redes-sociais {
 
     .galeria {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contato-layout,
+    .form-item,
+    .equipe {
+        grid-template-columns: 1fr;
     }
 
     footer {
